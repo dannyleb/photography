@@ -1,347 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danny LeBlanc — Photography</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny LeBlanc Photography</title>
+  <meta name="description" content="Photography portfolio by Danny LeBlanc. Equine, portrait, and lifestyle photography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ═══════════════ HEADER ═══════════════ -->
   <header id="site-header">
     <div class="header-inner">
       <a href="index.html" class="wordmark">DANNY LEBLANC</a>
       <nav class="primary-nav">
+        <a href="#equine" class="nav-link">EQUINE</a>
         <a href="#portraits" class="nav-link">PORTRAITS</a>
-        <a href="#landscapes" class="nav-link">LANDSCAPES</a>
-        <a href="#editorial" class="nav-link">EDITORIAL</a>
-        <a href="#events" class="nav-link">EVENTS</a>
+        <a href="#water" class="nav-link">WATER</a>
+        <a href="#moto" class="nav-link">MOTO</a>
         <a href="about.html" class="nav-link">ABOUT</a>
         <a href="contact.html" class="nav-link">CONTACT</a>
       </nav>
-      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- MOBILE NAV OVERLAY -->
+  <!-- ═══════════════ MOBILE NAV ═══════════════ -->
   <div class="mobile-nav" aria-hidden="true">
     <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
     <nav>
-      <a href="#portraits">PORTRAITS</a>
-      <a href="#landscapes">LANDSCAPES</a>
-      <a href="#editorial">EDITORIAL</a>
-      <a href="#events">EVENTS</a>
-      <a href="about.html">ABOUT</a>
-      <a href="contact.html">CONTACT</a>
+      <a href="#equine">Equine</a>
+      <a href="#portraits">Portraits</a>
+      <a href="#water">Water</a>
+      <a href="#moto">Moto</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 
-  <main>
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-image-wrap">
+      <img class="hero-img" src="images/hero/hero-main.jpg" alt="Cowgirls with horses at sunset in the desert">
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-image-wrap">
-        <!-- Replace hero/hero-01.jpg with your image -->
-        <img
-          src="images/hero/hero-01.jpg"
-          alt="Featured photograph"
-          class="hero-img"
-          onerror="this.src='https://placehold.co/1600x900/1a1a1a/555555?text=hero-01.jpg'"
-        />
-      </div>
-      <div class="hero-caption">
-        <p class="hero-tagline"><em>light &amp; form</em></p>
-      </div>
-    </section>
+  <!-- ═══════════════ EQUINE ═══════════════ -->
+  <section id="equine" class="gallery-section">
+    <div class="section-header">
+      <h2>Equine</h2>
+      <div class="section-rule"></div>
+    </div>
 
-    <!-- PORTRAITS -->
-    <section class="gallery-section" id="portraits">
-      <div class="section-header">
-        <h2>Portraits</h2>
-        <span class="section-rule"></span>
-      </div>
-      <div class="masonry-grid grid-3">
-        <figure class="grid-item tall">
-          <img
-            src="images/gallery/portraits/portrait-01.jpg"
-            alt="Portrait 01"
-            onerror="this.src='https://placehold.co/800x1200/1a1a1a/555555?text=portrait-01.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/portraits/portrait-02.jpg"
-            alt="Portrait 02"
-            onerror="this.src='https://placehold.co/800x800/222222/555555?text=portrait-02.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item tall">
-          <img
-            src="images/gallery/portraits/portrait-03.jpg"
-            alt="Portrait 03"
-            onerror="this.src='https://placehold.co/800x1200/1a1a1a/555555?text=portrait-03.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item wide">
-          <img
-            src="images/gallery/portraits/portrait-04.jpg"
-            alt="Portrait 04"
-            onerror="this.src='https://placehold.co/1200x800/222222/555555?text=portrait-04.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/portraits/portrait-05.jpg"
-            alt="Portrait 05"
-            onerror="this.src='https://placehold.co/800x800/1a1a1a/555555?text=portrait-05.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/portraits/portrait-06.jpg"
-            alt="Portrait 06"
-            onerror="this.src='https://placehold.co/800x800/222222/555555?text=portrait-06.jpg'"
-            loading="lazy"
-          />
-        </figure>
-      </div>
-    </section>
+    <div class="masonry-grid grid-3">
+      <figure class="grid-item tall">
+        <img src="images/equine/barn-embrace.jpg" alt="Woman and horse in intimate barn moment" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/equine/golden-saddles.jpg" alt="Woman framed between saddles at golden hour" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/bareback-dusk.jpg" alt="Rider on horseback at dusk" loading="lazy">
+      </figure>
 
-    <!-- DIVIDER IMAGE -->
-    <section class="full-bleed">
-      <img
-        src="images/hero/hero-02.jpg"
-        alt="Featured photograph"
-        onerror="this.src='https://placehold.co/1600x700/111111/555555?text=hero-02.jpg'"
-        loading="lazy"
-      />
-    </section>
+      <figure class="grid-item span-full">
+        <img src="images/equine/white-horse-gallop.jpg" alt="Rider galloping on white horse through desert" loading="lazy">
+      </figure>
 
-    <!-- LANDSCAPES -->
-    <section class="gallery-section" id="landscapes">
-      <div class="section-header">
-        <h2>Landscapes</h2>
-        <span class="section-rule"></span>
-      </div>
-      <div class="masonry-grid grid-2">
-        <figure class="grid-item">
-          <img
-            src="images/gallery/landscapes/landscape-01.jpg"
-            alt="Landscape 01"
-            onerror="this.src='https://placehold.co/900x600/1a1a1a/555555?text=landscape-01.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item tall">
-          <img
-            src="images/gallery/landscapes/landscape-02.jpg"
-            alt="Landscape 02"
-            onerror="this.src='https://placehold.co/900x1200/222222/555555?text=landscape-02.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item wide span-full">
-          <img
-            src="images/gallery/landscapes/landscape-03.jpg"
-            alt="Landscape 03"
-            onerror="this.src='https://placehold.co/1600x800/1a1a1a/555555?text=landscape-03.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/landscapes/landscape-04.jpg"
-            alt="Landscape 04"
-            onerror="this.src='https://placehold.co/900x600/222222/555555?text=landscape-04.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/landscapes/landscape-05.jpg"
-            alt="Landscape 05"
-            onerror="this.src='https://placehold.co/900x600/1a1a1a/555555?text=landscape-05.jpg'"
-            loading="lazy"
-          />
-        </figure>
-      </div>
-    </section>
+      <figure class="grid-item wide">
+        <img src="images/equine/cowgirl-laughing.jpg" alt="Cowgirl laughing with her horse" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/riding-away.jpg" alt="Rider heading into golden sunset" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/equine/hugging-horse.jpg" alt="Woman embracing horse" loading="lazy">
+      </figure>
 
-    <!-- EDITORIAL -->
-    <section class="gallery-section" id="editorial">
-      <div class="section-header">
-        <h2>Editorial</h2>
-        <span class="section-rule"></span>
-      </div>
-      <div class="masonry-grid grid-3">
-        <figure class="grid-item">
-          <img
-            src="images/gallery/editorial/editorial-01.jpg"
-            alt="Editorial 01"
-            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-01.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/editorial/editorial-02.jpg"
-            alt="Editorial 02"
-            onerror="this.src='https://placehold.co/800x1000/222222/555555?text=editorial-02.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/editorial/editorial-03.jpg"
-            alt="Editorial 03"
-            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-03.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item wide span-full">
-          <img
-            src="images/gallery/editorial/editorial-04.jpg"
-            alt="Editorial 04"
-            onerror="this.src='https://placehold.co/1600x900/222222/555555?text=editorial-04.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/editorial/editorial-05.jpg"
-            alt="Editorial 05"
-            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-05.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/editorial/editorial-06.jpg"
-            alt="Editorial 06"
-            onerror="this.src='https://placehold.co/800x1000/222222/555555?text=editorial-06.jpg'"
-            loading="lazy"
-          />
-        </figure>
-      </div>
-    </section>
+      <figure class="grid-item wide">
+        <img src="images/equine/floral-dress.jpg" alt="Woman in floral dress walking with horse in field" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/rider-smiling.jpg" alt="Blonde rider smiling on horseback" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/white-dress-horse.jpg" alt="Woman in white dress with dark horse" loading="lazy">
+      </figure>
 
-    <!-- DIVIDER IMAGE -->
-    <section class="full-bleed">
-      <img
-        src="images/hero/hero-03.jpg"
-        alt="Featured photograph"
-        onerror="this.src='https://placehold.co/1600x700/111111/555555?text=hero-03.jpg'"
-        loading="lazy"
-      />
-    </section>
+      <figure class="grid-item wide">
+        <img src="images/equine/paint-gallop.jpg" alt="Galloping on paint horse" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/paint-standing.jpg" alt="Standing with paint horse" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/equine/backlit-rider.jpg" alt="Backlit rider at golden hour" loading="lazy">
+      </figure>
 
-    <!-- EVENTS -->
-    <section class="gallery-section" id="events">
-      <div class="section-header">
-        <h2>Events</h2>
-        <span class="section-rule"></span>
-      </div>
-      <div class="masonry-grid grid-4">
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-01.jpg"
-            alt="Event 01"
-            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-01.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-02.jpg"
-            alt="Event 02"
-            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-02.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-03.jpg"
-            alt="Event 03"
-            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-03.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-04.jpg"
-            alt="Event 04"
-            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-04.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-05.jpg"
-            alt="Event 05"
-            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-05.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-06.jpg"
-            alt="Event 06"
-            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-06.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-07.jpg"
-            alt="Event 07"
-            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-07.jpg'"
-            loading="lazy"
-          />
-        </figure>
-        <figure class="grid-item">
-          <img
-            src="images/gallery/events/event-08.jpg"
-            alt="Event 08"
-            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-08.jpg'"
-            loading="lazy"
-          />
-        </figure>
-      </div>
-    </section>
+      <figure class="grid-item tall">
+        <img src="images/equine/paint-woods.jpg" alt="Riding through sun-dappled woods" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/equine/dark-horse-field.jpg" alt="Woman with dark horse in open field" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/walking-field.jpg" alt="Walking with black horse through field" loading="lazy">
+      </figure>
 
-  </main>
+      <figure class="grid-item span-full">
+        <img src="images/equine/two-riders.jpg" alt="Two riders galloping across open desert" loading="lazy">
+      </figure>
 
-  <!-- FOOTER -->
+      <figure class="grid-item wide">
+        <img src="images/equine/white-horse-smile.jpg" alt="Cowgirl smiling near white horse" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/standing-together.jpg" alt="Standing together in open field" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/equine/white-horse-behind.jpg" alt="Peeking from behind white horse" loading="lazy">
+      </figure>
+
+      <figure class="grid-item tall">
+        <img src="images/equine/horseback-overcast.jpg" alt="Rider on overcast day" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/equine/buckskin-ride.jpg" alt="Woman riding buckskin horse" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/leaning-post.jpg" alt="Cowgirl leaning on fence post" loading="lazy">
+      </figure>
+
+      <figure class="grid-item wide">
+        <img src="images/equine/forest-rider.jpg" alt="Rider in forest setting" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/equine/beside-buckskin.jpg" alt="Standing beside buckskin horse" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/equine/buckskin-sky.jpg" alt="Riding buckskin against open sky" loading="lazy">
+      </figure>
+
+      <figure class="grid-item wide">
+        <img src="images/equine/cowgirl-sunset.jpg" alt="Cowgirl silhouette at sunset" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DIVIDER — THREE RIDERS ═══════════════ -->
+  <div class="full-bleed" style="margin-top: 80px;">
+    <img src="images/hero/divider-riders.jpg" alt="Three riders on a desert ridge at sunset" loading="lazy">
+  </div>
+
+  <!-- ═══════════════ PORTRAITS ═══════════════ -->
+  <section id="portraits" class="gallery-section">
+    <div class="section-header">
+      <h2>Portraits</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="masonry-grid grid-3">
+      <figure class="grid-item tall">
+        <img src="images/portraits/autumn-gaze.jpg" alt="Cowgirl gazing upward in autumn light" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/hat-tip.jpg" alt="Tipping cowboy hat against blue sky" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/embroidered-jacket.jpg" alt="Embroidered western jacket from behind" loading="lazy">
+      </figure>
+
+      <figure class="grid-item wide">
+        <img src="images/portraits/cowgirls-laughing.jpg" alt="Two cowgirls laughing together" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/cowgirl-trailer.jpg" alt="Cowgirl by horse trailer" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/portraits/fog-portrait.jpg" alt="Portrait in fog" loading="lazy">
+      </figure>
+
+      <figure class="grid-item tall">
+        <img src="images/portraits/kentucky-winds.jpg" alt="Portrait by the water" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/portraits/lakeside-blonde.jpg" alt="Lakeside portrait" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/western-shirt.jpg" alt="Man in western shirt smiling" loading="lazy">
+      </figure>
+
+      <figure class="grid-item wide">
+        <img src="images/portraits/wind-star.jpg" alt="Windblown portrait against star wall" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/motel-cafe.jpg" alt="Motel cafe portrait" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/phillips66.jpg" alt="Portrait at Phillips 66" loading="lazy">
+      </figure>
+
+      <figure class="grid-item tall">
+        <img src="images/portraits/boots-rocks.jpg" alt="Western boots and hat on rocks" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/portraits/blanket-detail.jpg" alt="Hand holding woven blanket" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/portraits/rider-silhouette.jpg" alt="Rider silhouette at sunset" loading="lazy">
+      </figure>
+
+      <figure class="grid-item tall">
+        <img src="images/portraits/turquoise-portrait.jpg" alt="Portrait with turquoise jewelry" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/hat-behind.jpg" alt="Turned away holding hat" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/portraits/jacket-weeds.jpg" alt="Western jacket in tall grass" loading="lazy">
+      </figure>
+
+      <figure class="grid-item wide">
+        <img src="images/portraits/profile-hat.jpg" alt="Profile with western hat" loading="lazy">
+      </figure>
+      <figure class="grid-item">
+        <img src="images/portraits/feather-hat.jpg" alt="Portrait with feathered hat" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DIVIDER — LAKE ═══════════════ -->
+  <div class="full-bleed" style="margin-top: 80px;">
+    <img src="images/hero/divider-lake.jpg" alt="Silhouette by the lake at dusk" loading="lazy">
+  </div>
+
+  <!-- ═══════════════ WATER ═══════════════ -->
+  <section id="water" class="gallery-section">
+    <div class="section-header">
+      <h2>Water</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="masonry-grid grid-2">
+      <figure class="grid-item wide">
+        <img src="images/water/dock-swimmer.jpg" alt="Swimming in misty lake from dock" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/water/lake-sunset.jpg" alt="Silhouette wading into lake at sunset" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/water/standing-lake.jpg" alt="Standing in lake water" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MOTO ═══════════════ -->
+  <section id="moto" class="gallery-section">
+    <div class="section-header">
+      <h2>Moto</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="masonry-grid grid-2">
+      <figure class="grid-item tall">
+        <img src="images/moto/chopper-road.jpg" alt="Man on chopper on country road" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/moto/riding-headlight.jpg" alt="Riding motorcycle toward camera" loading="lazy">
+      </figure>
+      <figure class="grid-item wide">
+        <img src="images/moto/chopper-sitting.jpg" alt="Sitting on chopper in field" loading="lazy">
+      </figure>
+      <figure class="grid-item tall">
+        <img src="images/moto/motorcycle-portrait.jpg" alt="Portrait by motorcycle" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer>
     <div class="footer-inner">
       <span class="footer-name">DANNY LEBLANC</span>
       <div class="footer-links">
-        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <span class="footer-copy">&copy; 2026</span>
+      <span class="footer-copy">&copy; 2025</span>
     </div>
   </footer>
 
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-hidden="true">
+  <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
     <button class="lightbox-close" aria-label="Close">&times;</button>
-    <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
-    <button class="lightbox-next" aria-label="Next">&#8594;</button>
+    <button class="lightbox-prev" aria-label="Previous">&larr;</button>
     <div class="lightbox-img-wrap">
-      <img src="" alt="" class="lightbox-img" />
+      <img class="lightbox-img" src="" alt="">
     </div>
+    <button class="lightbox-next" aria-label="Next">&rarr;</button>
   </div>
 
   <script src="js/main.js"></script>
