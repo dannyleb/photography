@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danny LeBlanc — Photography</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="wordmark">DANNY LEBLANC</a>
+      <nav class="primary-nav">
+        <a href="#portraits" class="nav-link">PORTRAITS</a>
+        <a href="#landscapes" class="nav-link">LANDSCAPES</a>
+        <a href="#editorial" class="nav-link">EDITORIAL</a>
+        <a href="#events" class="nav-link">EVENTS</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="#portraits">PORTRAITS</a>
+      <a href="#landscapes">LANDSCAPES</a>
+      <a href="#editorial">EDITORIAL</a>
+      <a href="#events">EVENTS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-image-wrap">
+        <!-- Replace hero/hero-01.jpg with your image -->
+        <img
+          src="images/hero/hero-01.jpg"
+          alt="Featured photograph"
+          class="hero-img"
+          onerror="this.src='https://placehold.co/1600x900/1a1a1a/555555?text=hero-01.jpg'"
+        />
+      </div>
+      <div class="hero-caption">
+        <p class="hero-tagline"><em>light &amp; form</em></p>
+      </div>
+    </section>
+
+    <!-- PORTRAITS -->
+    <section class="gallery-section" id="portraits">
+      <div class="section-header">
+        <h2>Portraits</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="masonry-grid grid-3">
+        <figure class="grid-item tall">
+          <img
+            src="images/gallery/portraits/portrait-01.jpg"
+            alt="Portrait 01"
+            onerror="this.src='https://placehold.co/800x1200/1a1a1a/555555?text=portrait-01.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/portraits/portrait-02.jpg"
+            alt="Portrait 02"
+            onerror="this.src='https://placehold.co/800x800/222222/555555?text=portrait-02.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item tall">
+          <img
+            src="images/gallery/portraits/portrait-03.jpg"
+            alt="Portrait 03"
+            onerror="this.src='https://placehold.co/800x1200/1a1a1a/555555?text=portrait-03.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item wide">
+          <img
+            src="images/gallery/portraits/portrait-04.jpg"
+            alt="Portrait 04"
+            onerror="this.src='https://placehold.co/1200x800/222222/555555?text=portrait-04.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/portraits/portrait-05.jpg"
+            alt="Portrait 05"
+            onerror="this.src='https://placehold.co/800x800/1a1a1a/555555?text=portrait-05.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/portraits/portrait-06.jpg"
+            alt="Portrait 06"
+            onerror="this.src='https://placehold.co/800x800/222222/555555?text=portrait-06.jpg'"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- DIVIDER IMAGE -->
+    <section class="full-bleed">
+      <img
+        src="images/hero/hero-02.jpg"
+        alt="Featured photograph"
+        onerror="this.src='https://placehold.co/1600x700/111111/555555?text=hero-02.jpg'"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- LANDSCAPES -->
+    <section class="gallery-section" id="landscapes">
+      <div class="section-header">
+        <h2>Landscapes</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="masonry-grid grid-2">
+        <figure class="grid-item">
+          <img
+            src="images/gallery/landscapes/landscape-01.jpg"
+            alt="Landscape 01"
+            onerror="this.src='https://placehold.co/900x600/1a1a1a/555555?text=landscape-01.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item tall">
+          <img
+            src="images/gallery/landscapes/landscape-02.jpg"
+            alt="Landscape 02"
+            onerror="this.src='https://placehold.co/900x1200/222222/555555?text=landscape-02.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item wide span-full">
+          <img
+            src="images/gallery/landscapes/landscape-03.jpg"
+            alt="Landscape 03"
+            onerror="this.src='https://placehold.co/1600x800/1a1a1a/555555?text=landscape-03.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/landscapes/landscape-04.jpg"
+            alt="Landscape 04"
+            onerror="this.src='https://placehold.co/900x600/222222/555555?text=landscape-04.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/landscapes/landscape-05.jpg"
+            alt="Landscape 05"
+            onerror="this.src='https://placehold.co/900x600/1a1a1a/555555?text=landscape-05.jpg'"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="gallery-section" id="editorial">
+      <div class="section-header">
+        <h2>Editorial</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="masonry-grid grid-3">
+        <figure class="grid-item">
+          <img
+            src="images/gallery/editorial/editorial-01.jpg"
+            alt="Editorial 01"
+            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-01.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/editorial/editorial-02.jpg"
+            alt="Editorial 02"
+            onerror="this.src='https://placehold.co/800x1000/222222/555555?text=editorial-02.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/editorial/editorial-03.jpg"
+            alt="Editorial 03"
+            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-03.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item wide span-full">
+          <img
+            src="images/gallery/editorial/editorial-04.jpg"
+            alt="Editorial 04"
+            onerror="this.src='https://placehold.co/1600x900/222222/555555?text=editorial-04.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/editorial/editorial-05.jpg"
+            alt="Editorial 05"
+            onerror="this.src='https://placehold.co/800x1000/1a1a1a/555555?text=editorial-05.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/editorial/editorial-06.jpg"
+            alt="Editorial 06"
+            onerror="this.src='https://placehold.co/800x1000/222222/555555?text=editorial-06.jpg'"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- DIVIDER IMAGE -->
+    <section class="full-bleed">
+      <img
+        src="images/hero/hero-03.jpg"
+        alt="Featured photograph"
+        onerror="this.src='https://placehold.co/1600x700/111111/555555?text=hero-03.jpg'"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- EVENTS -->
+    <section class="gallery-section" id="events">
+      <div class="section-header">
+        <h2>Events</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="masonry-grid grid-4">
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-01.jpg"
+            alt="Event 01"
+            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-01.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-02.jpg"
+            alt="Event 02"
+            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-02.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-03.jpg"
+            alt="Event 03"
+            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-03.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-04.jpg"
+            alt="Event 04"
+            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-04.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-05.jpg"
+            alt="Event 05"
+            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-05.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-06.jpg"
+            alt="Event 06"
+            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-06.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-07.jpg"
+            alt="Event 07"
+            onerror="this.src='https://placehold.co/700x700/1a1a1a/555555?text=event-07.jpg'"
+            loading="lazy"
+          />
+        </figure>
+        <figure class="grid-item">
+          <img
+            src="images/gallery/events/event-08.jpg"
+            alt="Event 08"
+            onerror="this.src='https://placehold.co/700x700/222222/555555?text=event-08.jpg'"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">DANNY LEBLANC</span>
+      <div class="footer-links">
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" />
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

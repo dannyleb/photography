@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Danny LeBlanc Photography</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="wordmark">DANNY LEBLANC</a>
+      <nav class="primary-nav">
+        <a href="index.html#portraits" class="nav-link">PORTRAITS</a>
+        <a href="index.html#landscapes" class="nav-link">LANDSCAPES</a>
+        <a href="index.html#editorial" class="nav-link">EDITORIAL</a>
+        <a href="index.html#events" class="nav-link">EVENTS</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="index.html#portraits">PORTRAITS</a>
+      <a href="index.html#landscapes">LANDSCAPES</a>
+      <a href="index.html#editorial">EDITORIAL</a>
+      <a href="index.html#events">EVENTS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <main>
+    <div class="page-content">
+      <h1>About</h1>
+
+      <div class="page-portrait">
+        <img
+          src="images/about-portrait.jpg"
+          alt="Danny LeBlanc"
+          onerror="this.src='https://placehold.co/720x900/1a1a1a/555555?text=about-portrait.jpg'"
+        />
+      </div>
+
+      <p>
+        <!-- Replace this text with your own bio -->
+        Based in New York, Danny LeBlanc is a photographer drawn to the interplay of
+        light and shadow — the quiet moments between motion, the texture of a place,
+        the expression that lives just beneath a subject's surface.
+      </p>
+      <p>
+        His work spans portraiture, editorial, landscape, and event photography,
+        united by a commitment to honest, unhurried image-making.
+      </p>
+      <p>
+        Available for commissions, editorial assignments, and collaborative projects.
+      </p>
+
+      <p style="margin-top: 48px;">
+        <a href="contact.html" style="border-bottom: 1px solid currentColor; padding-bottom: 2px; font-family: var(--sans); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase;">Get in touch &rarr;</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">DANNY LEBLANC</span>
+      <div class="footer-links">
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
