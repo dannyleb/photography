@@ -4,12 +4,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --white:   #f8f6f2;
-  --off:     #f0ede8;
-  --mid:     #9a9590;
-  --dark:    #2a2622;
-  --black:   #111010;
-  --gap:     12px;
+  --white:   #e8e4de;
+  --off:     #1a1a18;
+  --mid:     #7a7570;
+  --dark:    #e8e4de;
+  --black:   #000000;
+  --bg:      #111010;
+  --gap:     4px;
   --nav-h:   64px;
   --serif:   'Cormorant Garamond', Georgia, serif;
   --sans:    'Inter', system-ui, sans-serif;
@@ -19,7 +20,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
-  background: var(--white);
+  background: var(--bg);
   color: var(--dark);
   font-family: var(--sans);
   font-weight: 300;
@@ -38,16 +39,16 @@ figure { overflow: hidden; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(248, 246, 242, 0.92);
+  background: rgba(17, 16, 16, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(42, 38, 34, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 #site-header.scrolled {
-  background: rgba(248, 246, 242, 0.98);
-  border-color: rgba(42, 38, 34, 0.14);
+  background: rgba(17, 16, 16, 0.98);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .header-inner {
@@ -90,7 +91,7 @@ figure { overflow: hidden; }
   position: absolute;
   bottom: -3px; left: 0; right: 0;
   height: 1px;
-  background: var(--dark);
+  background: var(--white);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s var(--ease);
@@ -130,7 +131,7 @@ figure { overflow: hidden; }
   position: fixed;
   inset: 0;
   z-index: 90;
-  background: var(--white);
+  background: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,14 +232,15 @@ figure { overflow: hidden; }
 .gallery-section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 80px 32px 0;
+  padding: 60px 0 0;
 }
 
 .section-header {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  padding: 0 32px;
 }
 
 .section-header h2 {
@@ -253,7 +255,7 @@ figure { overflow: hidden; }
 .section-rule {
   flex: 1;
   height: 1px;
-  background: rgba(42, 38, 34, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* ============================================================
@@ -276,7 +278,7 @@ figure { overflow: hidden; }
 /* Item sizing */
 .grid-item {
   overflow: hidden;
-  background: var(--off);
+  background: var(--bg);
   cursor: pointer;
   position: relative;
 }
@@ -313,7 +315,7 @@ figure { overflow: hidden; }
 footer {
   margin-top: 100px;
   padding: 40px 32px;
-  border-top: 1px solid rgba(42, 38, 34, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-inner {
@@ -432,7 +434,7 @@ footer {
 .page-content p {
   font-size: 17px;
   line-height: 1.75;
-  color: #5a5652;
+  color: var(--mid);
   margin-bottom: 24px;
   font-family: var(--serif);
   font-weight: 300;
@@ -443,7 +445,7 @@ footer {
   aspect-ratio: 4 / 5;
   overflow: hidden;
   margin-bottom: 48px;
-  background: var(--off);
+  background: var(--bg);
 }
 
 /* Contact form */
@@ -461,7 +463,7 @@ footer {
 .form-group textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid rgba(42, 38, 34, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
   padding: 10px 0;
   font-family: var(--serif);
@@ -473,7 +475,7 @@ footer {
   resize: none;
 }
 .form-group input:focus,
-.form-group textarea:focus { border-color: var(--dark); }
+.form-group textarea:focus { border-color: var(--white); }
 .form-group textarea { height: 120px; }
 
 .btn-submit {
@@ -499,13 +501,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-  :root { --gap: 8px; }
+  :root { --gap: 3px; }
 
   .primary-nav { display: none; }
   .hamburger   { display: flex; }
 
-  .gallery-section { padding: 56px 16px 0; }
-  .section-header  { margin-bottom: 20px; }
+  .gallery-section { padding: 40px 0 0; }
+  .section-header  { margin-bottom: 16px; padding: 0 16px; }
 
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 .span-full { grid-column: 1 / -1; }
